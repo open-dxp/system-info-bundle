@@ -1,0 +1,19 @@
+.opendxp_nav_icon_php {
+    background: url(/bundles/opendxpadmin/img/flat-white-icons/php.svg) center center no-repeat !important;
+}
+
+.opendxp_nav_icon_systemrequirements {
+    background: url(/bundles/opendxpadmin/img/flat-white-icons/factory.svg) center center no-repeat !important;
+}
+
+.opendxp_nav_icon_reports {
+    background: url(/bundles/opendxpadmin/img/flat-white-icons/pie_chart.svg) center center no-repeat !important;
+}
+
+.opendxp_icon_php {
+    background: url(/bundles/opendxpadmin/img/flat-color-icons/php.svg) center center no-repeat !important;
+}
+
+.opendxp_icon_reports {
+    background: url(/bundles/opendxpadmin/img/flat-color-icons/pie_chart.svg) center center no-repeat !important;
+}

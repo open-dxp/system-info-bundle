@@ -1,0 +1,32 @@
+{
+  "name": "open-dxp/system-info-bundle",
+  "license": "GPL-3.0+",
+  "type": "opendxp-bundle",
+  "description": "OpenDxp System Info & Tools Bundle that provides additional tools for checking System information.",
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "php": "~8.2.0 || ~8.3.0",
+    "open-dxp/opendxp": "^1.0.0",
+    "amnuts/opcache-gui": "^3.0.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "1.10.5",
+    "phpstan/phpstan-symfony": "^1.2.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "OpenDxp\\Bundle\\SystemInfoBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "opendxp": {
+      "bundles": [
+        "OpenDxp\\Bundle\\SystemInfoBundle\\OpenDxpSystemInfoBundle"
+      ]
+    }
+  }
+}
