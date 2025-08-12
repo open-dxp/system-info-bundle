@@ -19,20 +19,18 @@ use OpenDxp\Controller\UserAwareController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Profiler\Profiler;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 
 /**
- * @Route("/settings")
- *
  * @internal
  */
+#[Route("/settings")]
 class SettingsController extends UserAwareController
 {
     /**
-     * @Route("/phpinfo", name="opendxp_bundle_systeminfo_settings_phpinfo", methods={"GET"})
-     *
      * @throws \Exception
      */
+    #[Route('/phpinfo', name: 'opendxp_bundle_systeminfo_settings_phpinfo', methods: ['GET'])]
     public function phpinfoAction(Request $request, ?Profiler $profiler): Response
     {
         if ($profiler) {
