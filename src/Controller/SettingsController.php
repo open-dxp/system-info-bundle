@@ -24,7 +24,7 @@ use Symfony\Component\Routing\Attribute\Route;
 /**
  * @internal
  */
-#[Route("/settings")]
+#[Route('/settings')]
 class SettingsController extends UserAwareController
 {
     /**

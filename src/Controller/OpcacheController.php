@@ -27,7 +27,7 @@ use Symfony\Component\Routing\Attribute\Route;
 /**
  * @internal
  */
-#[Route("/opcache")]
+#[Route('/opcache')]
 class OpcacheController extends UserAwareController implements KernelControllerEventInterface
 {
     #[Route('/index', name: 'opendxp_bundle_systeminfo_opcache_index')]
