@@ -22,6 +22,12 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class OpenDxpSystemInfoExtension extends Extension
 {
+
+    public function getAlias(): string
+    {
+        return 'opendxp_system_info';
+    }
+
     public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
