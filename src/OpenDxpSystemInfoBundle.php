@@ -15,15 +15,26 @@
 
 namespace OpenDxp\Bundle\SystemInfoBundle;
 
+use OpenDxp\Bundle\SystemInfoBundle\DependencyInjection\OpenDxpSystemInfoExtension;
 use OpenDxp\Extension\Bundle\AbstractOpenDxpBundle;
 use OpenDxp\Extension\Bundle\OpenDxpBundleAdminClassicInterface;
 use OpenDxp\Extension\Bundle\Traits\BundleAdminClassicTrait;
 use OpenDxp\Extension\Bundle\Traits\PackageVersionTrait;
+use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 
 class OpenDxpSystemInfoBundle extends AbstractOpenDxpBundle implements OpenDxpBundleAdminClassicInterface
 {
     use PackageVersionTrait;
     use BundleAdminClassicTrait;
+
+    public function getContainerExtension(): ?ExtensionInterface
+    {
+        if (null === $this->extension) {
+            $this->extension = new OpenDxpSystemInfoExtension();
+        }
+
+        return $this->extension;
+    }
 
     public function getComposerPackageName(): string
     {
