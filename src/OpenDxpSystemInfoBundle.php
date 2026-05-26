@@ -27,6 +27,7 @@ class OpenDxpSystemInfoBundle extends AbstractOpenDxpBundle implements OpenDxpBu
     use PackageVersionTrait;
     use BundleAdminClassicTrait;
 
+    #[\Override]
     public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
@@ -55,6 +56,7 @@ class OpenDxpSystemInfoBundle extends AbstractOpenDxpBundle implements OpenDxpBu
         ];
     }
 
+    #[\Override]
     public function getPath(): string
     {
         return \dirname(__DIR__);
