@@ -5,6 +5,8 @@ parameters:
         - src
     bootstrapFiles:
         - phpstan-bootstrap.php
+    symfony:
+        containerXmlPath: var/cache/test/App_KernelTestDebugContainer.xml
 includes:
     - vendor/phpstan/phpstan-symfony/extension.neon
     - phpstan-baseline.neon
