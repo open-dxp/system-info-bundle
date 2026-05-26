@@ -19,13 +19,12 @@ opendxp:
         path_variable: ''
         domain: opendxp-test.dev
         redirect_to_maindomain: false
-        language: en
         valid_languages: 'en,de'
         fallback_languages:
             en: ''
             de: ''
         default_language: ''
-        disable_usage_statistics: false
+        disable_usage_statistics: true
     documents:
         versions:
             days: null
