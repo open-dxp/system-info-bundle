@@ -4,7 +4,10 @@
     "type": "opendxp-bundle",
     "description": "OpenDxp System Info & Tools Bundle that provides additional tools for checking System information.",
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "symfony/runtime": true
+        }
     },
     "require": {
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
